@@ -81,7 +81,8 @@ class Index extends \Magento\Backend\App\Action
         $mail->addTo($to, $to);
         $mail->setSubject('Test SMTP Email from Emizen Tech Private Limited');
         $mail->setBodyText('Thank you for choosing Emizen Tech\'s extension.');
-        
+        // To send HTML template in email
+        //$mail->setBodyHtml('<html><head> </head> <body> <p> test </p> </body> </html>');
         
         $result = __('Sent... Please check your email') . ' ' . $to;
         
